@@ -39,9 +39,12 @@ document.write('obj_changesets.changesets.length   '+ obj_changesets.changesets.
 for (var i=0;i<obj_changesets.changesets.length;i++)
 document.write( 'sta_rgb_res[i].rgb i= '+ i + '   ' +sta_rgb_res[i].r+ ' '+sta_rgb_res[i].g+ ' '+sta_rgb_res[i].b+ '<br/>');
 
+document.write('sta_rgb_res.length ' + sta_rgb_res + '<br/>');
 
-var total_rgb=get_total_rgb(sta_rgb_res);
-for(var i=0;i<total_rgb.size();i++)
+var total_rgb=new Array(sta_rgb_res.length);
+
+ total_rgb=get_total_rgb(sta_rgb_res);
+for(var i=0;i<total_rgb.length;i++)
 document.write('total_rgb[i] '+total_rgb[i]+ '<br/>');
 
 

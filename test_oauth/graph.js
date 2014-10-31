@@ -1,6 +1,6 @@
 
 
-function graph()
+function graph(data)
 {
 /*
 document.html;
@@ -29,7 +29,7 @@ var data = Array.apply(0, Array(100)).map(function() {
 
 
 
-var data=[10,22,33,60,89,151,10,22,33,60,89,151];
+//var data=[10,22,33,60,89,151,10,22,33,60,89,151];
 
 
 var margin = {top: 20, right: 20, bottom: 30, left: 50},
